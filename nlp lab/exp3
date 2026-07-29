@@ -1,0 +1,12 @@
+from nltk.stem import PorterStemmer
+
+stemmer = PorterStemmer()
+
+words = ["running", "studies", "playing", "better", "cars", "wolves"]
+
+print("Morphological Analysis using Stemming\n")
+
+for word in words:
+    print("Original :", word)
+    print("Stemmed  :", stemmer.stem(word))
+    print("-" * 30)
