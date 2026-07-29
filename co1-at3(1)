@@ -1,0 +1,39 @@
+import re
+
+# Function to validate Email
+def validate_email(email):
+    pattern = r'^[A-Za-z][A-Za-z0-9._]*@[A-Za-z]+\.(com|org|edu|net|in)$'
+    if re.fullmatch(pattern, email):
+        return "Valid Email"
+    else:
+        return "Invalid Email"
+
+# Function to validate Password
+def validate_password(password):
+    pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%&!])[A-Za-z\d@#$%&!]{8,}$'
+    if re.fullmatch(pattern, password):
+        return "Strong Password"
+    else:
+        return "Weak Password"
+
+# Function to validate Mobile Number
+def validate_mobile(mobile):
+    pattern = r'^[6-9]\d{9}$'
+    if re.fullmatch(pattern, mobile):
+        return "Valid Mobile Number"
+    else:
+        return "Invalid Mobile Number"
+
+# Input from user
+email = input("Enter Email Address: ")
+password = input("Enter Password: ")
+mobile = input("Enter Mobile Number: ")
+
+# Display Results
+print("\nValidation Results")
+print(validate_email(email))
+print(validate_password(password))
+print(validate_mobile(mobile))
+
+
+
