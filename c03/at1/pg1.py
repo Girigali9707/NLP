@@ -124,4 +124,4 @@ print(
 print(
     "P(programming | student is) =",
     trigram_probability("student", "is", "programming")
-)
+)2
