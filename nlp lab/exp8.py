@@ -28,4 +28,4 @@ for word in words:
     else:
         tag = "NN"     # Default tag for unknown words
 
-    print(f"{word:<15}{tag}")
+    print(f"{word:<15}{tag}")  
